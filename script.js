@@ -8,6 +8,9 @@ let numeros = document.querySelector('.campo');
 let etapaAutal = 0;
 let numero = '';
 let votoBranco = false
+let votos = [
+
+]
 
 
 
@@ -96,6 +99,7 @@ function corrige() {
     comecarEtapa()
 }
 
+
 function confirma() {
     let etapa = etapas[etapaAutal];
 
@@ -103,11 +107,16 @@ function confirma() {
 
     if(votoBranco === true) {
         votoConfirme = true;
-        console.log('Confirmando Branco')
+        votos.push({
+            etapa: etapas[etapaAutal].titulo,
+            voto: 'branco'
+        });
     } else if(numero.length === etapa.numeros) {
         votoConfirme = true;
-        console.log('Confirmando' + numero)
-    }
+        votos.push({
+            etapa: etapas[etapaAutal].titulo,
+            voto: numero
+        });    }
 
     if(votoConfirme) {
         etapaAutal++;
@@ -115,11 +124,15 @@ function confirma() {
             comecarEtapa();
         } else {
             document.querySelector('.prevContainer').innerHTML = `<div class="avisoGigante pisca">FIM</div>`;
+            
         }
          
     }
+    
 }
 
-
+function atualizar() {
+    document.location.reload(true);
+}
 
 comecarEtapa()

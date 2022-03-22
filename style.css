@@ -172,6 +172,9 @@ img {
     width: 40%;
     height: calc(100% + 2px);
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   
 }
 .table {
@@ -188,7 +191,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .ln1 {
@@ -228,6 +231,7 @@ button {
     font-weight: bolder;
     font-size: 13px;
     color: #000;
+    height: 55px;
     background-color: rgb(8, 138, 47);
 }
 
@@ -247,6 +251,18 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+.newVotos {
+    background-color: rgb(243, 247, 33);
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    width: 150px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+
 
 @media screen and (max-width: 400px) {
 
@@ -276,6 +292,10 @@ button {
     .nextContainer {
         margin: 0;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     button {
@@ -292,8 +312,17 @@ button {
     }
 
     .textInfo {
-        width: 100%;
+        width: 90%;
         height: 25%;
+    }
+
+    .newVotos {
+        background-color: rgb(243, 247, 33);
+        color: #000;
+        font-weight: bold;
+        font-size: 16px;
+        width: 200px;
+        margin-top: 20px;
     }
     
 }
