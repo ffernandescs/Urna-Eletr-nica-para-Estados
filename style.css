@@ -253,6 +253,8 @@ button {
 }
 
 .newVotos {
+    position: relative;
+    top: 120px;
     background-color: rgb(243, 247, 33);
     color: #000;
     font-weight: bold;

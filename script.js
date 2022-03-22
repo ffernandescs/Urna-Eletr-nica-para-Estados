@@ -4,6 +4,8 @@ let descricao = document.querySelector('.textCampo');
 let aviso = document.querySelector('.textInfo');
 let imageCand = document.querySelector('.ladoDireito');
 let numeros = document.querySelector('.campo');
+let botoes = document.querySelector('.table')
+let novoVoto = document.querySelector('.newVotos');
 
 let etapaAutal = 0;
 let numero = '';
@@ -35,6 +37,7 @@ function comecarEtapa() {
     aviso.style.display = 'none'
     imageCand.innerHTML = '';
     numeros.innerHTML = numeroHtml;
+    novoVoto.style.display = 'none';
 }
 
 function atualizaInterface() {
@@ -124,6 +127,9 @@ function confirma() {
             comecarEtapa();
         } else {
             document.querySelector('.prevContainer').innerHTML = `<div class="avisoGigante pisca">FIM</div>`;
+            botoes.innerHTML = '';
+            novoVoto.style.display = 'block';
+
             
         }
          
