@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 900px;
+    height: 50vh;
+    background-color: rgb(211, 205, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    width: calc(100% - 40px);
+    height:calc(100% - 40px) ;
+    display: flex;
+}
+
+.prevContainer {
+    background-color: rgb(218, 213, 213);
+    width: 60%;
+    height: 100%;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+.tela {
+    height: calc(80% - 22px);
+    display: flex;
+    width: 100%;
+    border-right: 1px solid #000;
+}
+
+
+.tela h1, .tela h2 {
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.textCargo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textCargo h1 {
+    text-align: start;
+}
+
+.tela h2 {
+    text-align: center;
+}
+
+.ladoEsquerdo {
+    padding-left: 20px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ladoDireito {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.imgCand {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end   ;
+    width: calc(100% - 8px);
+    height: 50%;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.textCand {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+img {
+    width: 60%;
+    height: 100%;
+}
+
+.infTela {
+    width: 100%;
+}
+
+.campo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.cp {
+    border: 1px solid #000;
+    width: 35px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+}
+
+.cp .numero {
+    font-size: 26px;
+}
+
+@keyframes pisca {
+    0% { opacity: 0.2;}
+    50% { opacity: 1;}
+    100% { opacity: 0.2;}
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.textCampo {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.textCampo span {
+    text-transform: uppercase;
+}
+
+.textInfo {
+    border-top: 1px solid #000;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+}
+
+.textInfo span {
+    padding-left: 20px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.nextContainer {
+    background-color: rgb(65, 65, 65);
+    width: 40%;
+    height: calc(100% + 2px);
+    margin-left: 10px;
+  
+}
+.table {
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linha {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ln1 {
+
+    justify-content: center;
+}
+
+button {
+    color: #eee;
+    font-size: 20px;
+    background-color: #000;
+    width: calc(33.33% - 6px);
+    height: 40px;
+    border: none;
+    padding: 0;
+    margin: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnColor1 {
+    font-size: 13px;
+    color: #000;
+    font-weight: bolder;
+    background-color: #eee;
+}
+
+.btnColor2 {
+
+    font-size: 13px;
+    font-weight: bolder;
+    color: #000;
+    background-color: orange;
+}
+
+.btnColor3 {
+    font-weight: bolder;
+    font-size: 13px;
+    color: #000;
+    background-color: rgb(8, 138, 47);
+}
+
+.avisoGrande {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.avisoGigante {
+    width: 100%;
+    height: 100%;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    display: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        height: 100vh;
+    }
+
+    .conteudo {
+        width: calc(100% -20px);
+        height: calc(100vh -20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tela {
+        height: 75%;
+    }
+
+    .prevContainer {
+        width: 100%;
+        height: 50%;
+        margin: 0 0 30px 0;
+    }
+
+    .nextContainer {
+        margin: 0;
+        width: 100%;
+    }
+
+    button {
+        height: 60px;
+    }
+
+    .imgCand {
+        align-items: center;
+        padding-right: 0px;
+    }
+
+    .textCand {
+        width: 100%;
+    }
+
+    .textInfo {
+        width: 100%;
+        height: 25%;
+    }
+    
+}

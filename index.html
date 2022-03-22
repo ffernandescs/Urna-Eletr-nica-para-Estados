@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Projeto Urna Eletrônica</title>
+</head>
+<body>
+  <div class="container">
+    <div class="conteudo">
+      <div class="prevContainer">
+        <div class="tela">
+          <div class="ladoEsquerdo">
+            <div class="textCargo">
+              <h1>Seu voto para</h1>
+              <h2>ss</h2>
+            </div>
+            <div class="infTela">
+              <div class="campo">
+                <div class="cp pisca"></div>
+                <div class="cp"></div>
+              </div>
+              <div class="textCampo">
+                Nome: Felipe Fernandes <br/>
+                Partido: ss <br/>
+                Vice-Prefeito: Programador Dev
+              </div>             
+            </div>
+            
+          </div>
+          <div class="ladoDireito">
+            <div class="imgCand">
+              <img src="./image/logo.jpg" alt="">
+              <div class="textCand">
+                <span>Prefeito</span>
+              </div>
+            </div>
+            <div class="imgCand">
+              <img src="./image/logo.jpg" alt="">
+              <div class="textCand">
+                <span>Vice-Prefeito</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="textInfo">
+          <span>
+            Aperte a tela: <br/>
+            CONFIRMAR para CONFIRMAR este voto<br/>
+            CORRIGIR para REINICIAR este voto
+          </span>
+
+        </div>
+      </div>
+      <div class="nextContainer">
+        <div class="table">
+          <div class="linha">
+            <button  onclick="clicou(1)">1</button>
+            <button onclick="clicou(2)">2</button>
+            <button onclick="clicou(3)">3</button>
+          </div>
+          <div class="linha">
+            <button onclick="clicou(4)">4</button>
+            <button onclick="clicou(5)">5</button>
+            <button onclick="clicou(6)">6</button>
+          </div>
+          <div class="linha">
+            <button onclick="clicou(7)">7</button>
+            <button onclick="clicou(8)">8</button>
+            <button onclick="clicou(9 )">9</button>
+          </div>
+          <div class="linha ln1">
+            <button onclick="clicou(0)">0</button>
+          </div>
+          <div class="linha btnEspecial">
+            <button class="btnColor1" onclick="branco()">Branco</button>
+            <button class="btnColor2" onclick="corrige()">Corrigir</button>
+            <button class="btnColor3" onclick="confirma()">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./etapas.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
