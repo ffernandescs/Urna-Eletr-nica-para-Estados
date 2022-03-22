@@ -1,21 +1,21 @@
-let etapas = [
+let etapasVotacao = [
     {
         titulo: 'VEREADOR',
         numeros: 5,
         candidatos: [
             {
-                numero: '38111',
+                number: '13613',
                 name: 'Felipe Fernandes',
                 partido: 'Bolsonarista',
-                fotos:[
+                fotos: [
                     {url:'logo.jpg', legenda: 'Vereador'}
                 ]
             },
             {
-                numero: '38112',
+                number: '13615',
                 name: 'Programador Dev',
-                partido: 'Capitalista',
-                fotos:[
+                partido: 'Desenvolvedor',
+                fotos: [
                     {url:'logo.jpg', legenda: 'Vereador'}
                 ]
             },
@@ -26,23 +26,21 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-                numero: '13',
-                name: 'Luladrão',
-                partido: 'Pão com Mortadela',
-                fotos:[
-                    {url:'logo.jpg', legenda: 'Prefeito'},
-                    {url:'logo.jpg', legenda: 'Vice-Prefeito'}
+                number: '13',
+                name: 'Felipe Fernandes',
+                partido: 'Bolsonarista',
+                fotos: [
+                    {url:'logo.jpg', legenda: 'Vereador'}
                 ]
             },
             {
-                numero: '17',
-                name: 'Bolsonaro',
-                partido: 'Bolsonarista',
-                fotos:[
-                    {url:'logo.jpg', legenda: 'Prefeito'},
-                    {url:'logo.jpg', legenda: 'Vice-Prefeito'}
+                number: '17',
+                name: 'Dev',
+                partido: 'Front And',
+                fotos: [
+                    {url:'logo.jpg', legenda: 'Vereador'}
                 ]
-            },
+            }
         ]
-    },
+    }
 ]
