@@ -76,7 +76,7 @@ let etapas = [
                 name: 'Felipe Fernandes',
                 partido: 'Bolsonarista',
                 fotos:[
-                    {url:'logo.jpg', legenda: 'Governador'}
+                    {url:'logo.jpg', legenda: 'Governador'},
                     {url:'logo.jpg', legenda: 'Vice-Governador'}
                 ]
             
@@ -86,7 +86,7 @@ let etapas = [
                 name: 'Programador Dev',
                 partido: 'Capitalista',
                 fotos:[
-                    {url:'logo.jpg', legenda: 'Governador'}
+                    {url:'logo.jpg', legenda: 'Governador'},
                     {url:'logo.jpg', legenda: 'Vice-Governador'}
                 ]
             },
