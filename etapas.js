@@ -82,7 +82,7 @@ let etapas = [
             
             },
             {
-                numero: '38112',
+                numero: '17',
                 name: 'Programador Dev',
                 partido: 'Capitalista',
                 fotos:[
